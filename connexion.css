@@ -1,15 +1,18 @@
-#page1 #page2 #page3{
+#page1, #page2, #page3{
     margin: 0 px;
     height: 100%;
-    
 } 
 
-#page1{   
-     background-image: url("backgroundp1.jpg");
-    
+header{
+    text-align: center;
 }
 
-#page1 main{
+#page1{   
+    background-image: url("backgroundp1.jpg");
+    background-size: cover;
+}
+
+ .contenair{
     
     border-style: hidden;
     background-color: white;
@@ -23,7 +26,6 @@
    border:5px solid #174889; 
    margin: 10px;
    padding:5px;
-   
 }
 
 .formulaire{
@@ -34,6 +36,7 @@
     font-size: 18px;
     color:#174889;
 }
+
 h1{
     text-align: center;
     font-size: 30px;
@@ -41,7 +44,6 @@ h1{
 }
 
 .button {
-    
     background-color: #008CBA;
     border: none;
     color: white;
@@ -70,11 +72,11 @@ span{
     color:white;
     font-size:18px;
 }
+
 #lien {
     text-decoration: none;
-    color:white;
+    color: #F6986E;
     font-size:18px;
-    
 }
 #lien:hover{
     font-style: italic;
@@ -83,23 +85,32 @@ span{
 #lien:visited{
     font-weight: bolder;
     text-decoration: none;
-    color:#174889;
 }
+
+
 
 /*css de la page inscription.html*/
 
 #page2{
     background-image: url("backgroundp2.jpg");
+    background-size: cover;
 }
 
-#page2 main{
+.contenair{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page2 .contenair{
     border-style: hidden;
     background-color: white;
     padding: 10px;
     width: 500px;
-    height: 1100px;
+    height: 1200px;
     justify-content: center;
 }
+
 #page2 #cadre{
     border:5px solid #174889; 
     margin: 10px;
@@ -108,16 +119,31 @@ span{
 }
 
 #page2 .formulaire{
-    width: 400px;
-    
+    width: 400px;    
 }
 
 fieldset{
     margin:5px;
     padding: 10px;
 }
+
 legend{
     font-weight: bolder;
 }
 
 
+ 
+/*css de la page motdepasse.html*/
+
+#page3{   
+    background-image: url("backgroundp3.jpg");
+    background-size: cover;
+}
+#page3 p{
+    color:#174889;
+    text-align: center;
+}
+#page3 .formulaire p{
+    font-style: italic;
+    font-size: 16px;
+}
