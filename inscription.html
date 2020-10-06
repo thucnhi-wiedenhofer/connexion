@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connexion.css">
+    <title>Inscription</title>
+</head>
+<body id="page2" >
+    <header>
+        <h1>Créer un compte</h1>
+    </header>
+    <main>
+        <article id="cadre">    
+            <form class="formulaire" action="connexion.html" method="POST">
+                <fieldset id="login" >
+                    <legend>Log in</legend>
+                    <label for="login">Identifiant:</label><br>
+                    <input type="text" id="login" name="login" required><br>
+                    <label for="password">Mot de passe:</label><br>
+                    <input type="text" id="password" name="password" required><br>  
+                    <label for="password">Confirmer votre mot de passe:</label><br>
+                    <input type="text" id="password" name="password" required><br>
+                </fieldset>
+
+                <fieldset id="identite">
+                    <legend>Identité</legend>
+                    <label for="nom">Nom:</label><br>
+                    <input type="text" id="nom" name="nom" required><br>
+                    <label for="prenom">Prénom:</label><br>
+                    <input type="text" id="prenom" name="prenom" required><br>
+                    
+                    <label for="birthday">Date de naissance:</label><br>
+                    <input type="date" id="birthday" name="birthday" value="jj/mm/aaaa" required>
+                    <p>Vous êtes:<input type="radio" id="genre" value="femme" name="genre" required>
+                    <label for="genre">une femme</label>
+                    <input type="radio" id="genre" value="homme" name="genre" required>
+                    <label for="genre">un homme</label><br>
+                    </p>
+                    </fieldset>
+
+                <fieldset id="coordonnees">
+                    <legend>Coordonnées</legend>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="phone">Numéro de téléphone:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pour mieux vous connaître</legend> 
+                    <label>Votre niveau d'étude:</label>
+                    <select name="etude" id="etude">
+                        <option value="niveau3">BEP CAP</option>
+                        <option value="niveau4">Bac</option>
+                        <option value="niveau5">Bac+2</option>
+                        <option value="niveau6">Bac+3 et Bac+4</option>
+                        <option value="niveau7">Bac+5</option>
+                        <option value="niveau8">Bac+8 et plus</option>
+                    </select><br><br>
+                    <label for="presentation">Présentez-vous en quelques lignes:</label><br>
+                    <textarea id="presentation" name="presentation" rows="8" cols="25"></textarea><br>
+                    <label for="hobbies">Vos hobbies:</label>
+                    <p><input type="checkbox" name="hobbies"> cinéma
+                    <input type="checkbox" name="hobbies"> sport
+                    <input type="checkbox" name="hobbie"> cuisine</p>
+                    <p><input type="checkbox" name="hobbies"> lecture
+                    <input type="checkbox" name="hobbies"> jeux vidéo
+                    <input type="checkbox" name="hobbie"> art</p>
+
+                        
+                </fieldset>
+                <input class="button" type="submit" value="valider">
+            </form>
+        </article> 
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
