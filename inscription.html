@@ -21,9 +21,9 @@
                         <label for="login">Identifiant:</label><br>
                         <input type="text" id="login" name="login" required><br>
                         <label for="password">Mot de passe:</label><br>
-                        <input type="text" id="password" name="password" required><br>  
+                        <input type="password" id="password" name="password" required><br>  
                         <label for="password">Confirmer votre mot de passe:</label><br>
-                        <input type="text" id="password" name="password" required><br>
+                        <input type="password" id="password" name="password" required><br>
                     </fieldset>
 
                     <fieldset id="identite">
@@ -64,12 +64,12 @@
                         <label for="presentation">Présentez-vous en quelques lignes:</label><br>
                         <textarea id="presentation" name="presentation" rows="8" cols="25"></textarea><br>
                         <label for="hobbies">Vos hobbies:</label>
-                        <p><input type="checkbox" name="hobbies"> cinéma
-                        <input type="checkbox" name="hobbies"> sport
-                        <input type="checkbox" name="hobbie"> cuisine</p>
-                        <p><input type="checkbox" name="hobbies"> lecture
-                        <input type="checkbox" name="hobbies"> jeux vidéo
-                        <input type="checkbox" name="hobbie"> art</p>
+                        <p><input type="checkbox" id="cinema" name="hobbies"><label for="cinema">cinéma</label>
+                        <input type="checkbox" id="sport" name="hobbies"><label for ="sport">sport</label>
+                        <input type="checkbox" id="cuisine" name="hobbie"><label for="cuisine">cuisine</label><br>
+                        <input type="checkbox" id="lecture" name="hobbies"><label for="lecture">lecture</label> 
+                        <input type="checkbox" id="jeux" name="hobbies"><label for="jeux">jeux vidéo</label>
+                        <input type="checkbox" id="art" name="hobbie"><label for="art">art</label> </p>
                        
                     </fieldset>
                     <input class="button" type="submit" value="valider">
@@ -80,7 +80,6 @@
     <footer>
         <p>Retrouvez nous sur: <br>
         <img src="images/logosreseaux.jpg" alt="logo facebook"width="50px"></p>
-    </footer>
     </footer>
 </body>
 </html>
